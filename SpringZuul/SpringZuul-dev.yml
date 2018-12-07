@@ -22,4 +22,4 @@ zuul:
 
 dev:
   config:
-    desc: test~
+    desc: test123
