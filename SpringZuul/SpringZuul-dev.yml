@@ -2,20 +2,16 @@
 spring:
     application:
       name: SpringZuul
+    rabbitmq:
+      host: 192.168.99.100
+      port: 5672
+      username: SpringCloud
+      password: SpringCloud123
+
 
 # 配置端口
 server:
   port: 4001
-
-# 配置注册中心
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:18090/eureka/
 
 # 配置路由
 zuul:
@@ -24,4 +20,6 @@ zuul:
       path: /api-f1/**
       serviceId: FeignServer
 
-
+dev:
+  config:
+    desc: test~
