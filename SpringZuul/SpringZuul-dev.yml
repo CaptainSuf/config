@@ -18,4 +18,4 @@ zuul:
 
 dev:
   config:
-    desc: test12345
+    desc: test123456
